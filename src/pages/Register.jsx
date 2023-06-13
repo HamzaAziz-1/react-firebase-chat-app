@@ -75,8 +75,8 @@ const Register = () => {
           </label>
           <button disabled={loading}>Sign up</button>
           {loading && "Uploading and compressing the image please wait..."}
-          {console.log(err.res)
-          /* {err && <span>Something went wrong</span>} */}
+          {console.log(err.res)}
+          {err && <span>Something went wrong</span>}
         </form>
         <p>
           You do have an account? <Link to="/register">Login</Link>
